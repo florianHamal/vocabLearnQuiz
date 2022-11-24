@@ -14,7 +14,7 @@ public class Quiz {
 
             String input = scanner.nextLine();
             System.out.println(vocabCard.getLanguageTwo());
-            if (input == "ESC"){//wenn ESC:
+            if (input.matches("ESC")){//wenn ESC:
                 return;
 
             } else if (input==vocabCard.getLanguageTwo()) {//wenn richtig:
