@@ -2,12 +2,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Quiz {
+    public static int lvl = 0;
     public static void runQuiz(){
         DummyVocabDatabase database = DummyVocabDatabase.gerInstance();
         Scanner scanner = new Scanner(System.in);
 
 
-        for (VocabCard vocabCard:database.getLvl(0)){
+        for (VocabCard vocabCard:database.getLvl(lvl)){
             System.out.println("---------------------------");
             System.out.println(vocabCard.getLanguageOne());
 
