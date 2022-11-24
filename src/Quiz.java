@@ -23,8 +23,11 @@ public class Quiz {
             }else{ //wenn falsch:
                 System.out.println("Was the answer right? y/other");
 
+
                 if (scanner.nextLine().matches("y")){//frage ob doch richtig
                     vocabCard.setLvl(vocabCard.getLvl()+1);
+                }else {
+                    vocabCard.setLvl(0);
                 }
             }
 
