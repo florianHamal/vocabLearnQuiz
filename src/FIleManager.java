@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class FIleManager {
-    static String path = "D:\\things to save\\dev\\vocabLernsystem\\src";
+    static String path = System.getProperty("user.dir")+"\\src"
     static String[] readFiles = {"vocab.csv"};
     static String[] writeFiles = {"vocab.csv"};
 
