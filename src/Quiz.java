@@ -17,7 +17,8 @@ public class Quiz {
             if (input.matches("ESC")){//wenn ESC:
                 return;
 
-            } else if (input==vocabCard.getLanguageTwo()) {//wenn richtig:
+            } else if (input.matches(vocabCard.getLanguageTwo())) {//wenn richtig:
+                System.out.println("richtig");
                 vocabCard.setLvl(vocabCard.getLvl()+1);
 
             }else{ //wenn falsch:
